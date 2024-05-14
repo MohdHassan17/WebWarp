@@ -1,0 +1,144 @@
+.landing-container{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+   
+}
+
+.landing-bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.landing{
+    padding-top: 10%;;
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    
+
+}
+
+.landing-text-container{
+  padding-left: 50px;
+  align-self: center;
+  grid-area: 'text';
+  display: grid;
+  grid-template-rows: auto;
+  gap:10px;
+}
+
+.landing-heading{
+    font-weight: bold;
+    font-family: 'Lora';
+    font-size: 2rem;
+    margin: 5px;
+     color: rgb(4, 23, 37)
+}
+
+.landing-description{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: light;
+    margin: 5px;
+}
+
+.landing-img-container{
+    justify-self: center;
+    grid-area:'image'
+}
+
+.landing-img{
+    width: 350px;
+}
+
+.landing-button-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.btn{
+    margin: 15px;
+    padding: 13px 18px; 
+    font-size: .75rem;
+    border-radius: 50px;
+    transition: .2s ease-out;
+    font-weight: bold;
+    border: 2px solid  rgb(4, 23, 37); 
+}
+
+.lighter-btn{
+    border: 2px solid #4169E1;
+
+}
+
+.btn:hover{
+    transform: translateY(-20px);
+}
+
+.black-feature-text{
+    color: rgb(4, 23, 37)
+}
+
+.feature-container{
+    margin-top: 15%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1256px){
+    .landing-heading{
+        font-size: 1.2rem;
+    }
+
+    .landing-description{
+        font-size: 10px;;
+    }
+    .btn{
+        margin: 15px;
+        padding: 10px 13px; 
+        font-size: .6rem;
+       
+    }
+
+    .landing-button-container{
+        
+    }
+
+    .landing-img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .landing{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        gap: 30px;
+                             
+    }
+
+    .landing-img-container{
+        order: 1;
+    }
+
+    .landing-text-container{
+        padding: 0 20px 0 20px;
+        order: 2;
+        text-align: center;
+        
+    }
+
+    .landing-img{
+        width:270px;
+    }
+
+    .landing-button-container{
+        justify-content: center;
+    }
+}
