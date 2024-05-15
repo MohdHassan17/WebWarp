@@ -7,9 +7,9 @@
 
 .landing-bg-img{
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    top:0;
+    left:0;;
+    z-index: -1;
 }
 
 .landing{
@@ -32,8 +32,8 @@
 
 .landing-heading{
     font-weight: bold;
-    font-family: 'Lora';
-    font-size: 2rem;
+    font-family: monospace;
+    font-size: 1.7rem;
     margin: 5px;
      color: rgb(4, 23, 37)
 }
@@ -66,7 +66,7 @@
     padding: 13px 18px; 
     font-size: .75rem;
     border-radius: 50px;
-    transition: .2s ease-out;
+    transition: .4s ease-out;
     font-weight: bold;
     border: 2px solid  rgb(4, 23, 37); 
 }
@@ -77,16 +77,35 @@
 }
 
 .btn:hover{
-    transform: translateY(-20px);
+    
+    transform: translateY(-5px);
 }
 
 .black-feature-text{
     color: rgb(4, 23, 37)
 }
 
+
+
+/* Feature Container */
+
+
 .feature-container{
-    margin-top: 15%;
+    margin-top: 0;
+    position: relative;
 }
+
+.feature-bg-img{
+    position: absolute;
+    bottom:0;
+    left:0;;
+    z-index: -1;
+}
+
+
+
+
+
 
 /* Media Queries */
 

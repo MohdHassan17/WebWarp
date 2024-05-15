@@ -1,14 +1,25 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Typewriter from "typewriter-effect";
-import Background from "../assets/images/layered-waves-haikei (3).svg";
-import DesignImage from "../assets/images/landing-bg.svg";
+import LandingBG from "../assets/images/layered-waves-haikei (3).svg";
+import FeaturesBG from '../assets/images/second-section.svg'
+import DesignImage from '../assets/images/landing-bg.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "../assets/css/Landing.css";
 
+
+
 function Landing() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
-      <section className="landing-container">
-        <img src={Background} alt="" className="landing-bg-img" style={{width: '100%'}} />
+      <section className="landing-container" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
+        <img src={LandingBG} alt="" className="landing-bg-img" style={{ width: '100%' }} />
         <div className="landing">
           <div className="landing-text-container">
             <div className="landing-text">
@@ -41,7 +52,7 @@ function Landing() {
               </p>
             </div>
             <div className="landing-button-container">
-              <a href="" className="btn lighter-btn">
+              <a href="" className="btn btn-hover lighter-btn">
                 VIEW SERVICES
               </a>
               <a href="" className="btn bg-blue-800 " style={{ color: "#fff" }}>
@@ -57,10 +68,11 @@ function Landing() {
 
       {/* Features Section */}
 
-      <section class="container mx-auto px-12 py-28 feature-container">
+      <section class="container mx-auto px-12 py-28 feature-container" data-aos="fade-zoom-in"
+       >
+
         <h1 class="mb-24 w-full text-center text-4xl font-extrabold dark:text-slate-50 sm:mx-auto sm:mb-20 sm:w-4/5 black-feature-text">
-          <span class="text-violet-500">Best benefits</span>
-          for small and medium businesses
+          <span class="text-blue-800">Best benefits</span> for small and medium businesses
         </h1>
         <div class="flex flex-col space-y-24 sm:flex-row sm:space-y-0 sm:space-x-8">
           <div class="flex w-full flex-col justify-between sm:mb-0 sm:w-1/3">
