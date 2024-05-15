@@ -15,7 +15,7 @@
 .landing{
     padding-top: 10%;;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
 
     
 
@@ -40,7 +40,7 @@
 
 .landing-description{
     font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: light;
     margin: 5px;
 }
@@ -151,6 +151,12 @@
         order: 2;
         text-align: center;
         
+        
+    }
+
+    .landing-heading{
+        height: 50px;
+    
     }
 
     .landing-img{
