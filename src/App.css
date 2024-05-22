@@ -1,5 +1,14 @@
 body{
-    background-color: #F8F8FF;
+   
     font-family: 'Inter';
 }
 
+
+
+footer{
+    margin-top: 150px;
+}
+
+.footer-heading{
+    color: whitesmoke;
+}

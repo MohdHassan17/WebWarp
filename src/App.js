@@ -2,8 +2,10 @@ import { React, useEffect } from 'react';
 
 import './App.css';
 import Navbar from './components/Navbar'
-import { BrowserRouter as Route, Router } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from './pages/Landing';
+import ContactUs from './pages/ContactUs';
+import Footer from './components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -15,8 +17,20 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
-      <Landing/>
+
+<Navbar/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing/>}/>
+        <Route path='/contact' element={<ContactUs/>} />
+      </Routes>
+      
+      </BrowserRouter>
+
+
+    
+   
+      <Footer/>
     </div>
   );
 }

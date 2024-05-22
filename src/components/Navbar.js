@@ -5,10 +5,10 @@ import "../assets/css/Navbar.css"
 import Warp from '../assets/images/Warp.png'
 
 const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Contact Us', href: '#', current: false },
-  { name: 'Get A Quote', href: '#', current: true },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Services', href: '', current: false },
+  { name: 'FAQs', href: '#', current: false },
+  { name: 'Get A Quote', href: '/contact', current: true },
 ]
 
 function classNames(...classes) {

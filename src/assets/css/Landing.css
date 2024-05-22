@@ -1,6 +1,6 @@
 .landing-container{
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     position: relative;
    
 }
@@ -35,7 +35,10 @@
     font-family: monospace;
     font-size: 1.7rem;
     margin: 5px;
-     color: rgb(4, 23, 37)
+     color: rgb(4, 23, 37);
+     height: 50px;
+     width: 100%;
+     
 }
 
 .landing-description{
@@ -52,6 +55,22 @@
 
 .landing-img{
     width: 350px;
+    animation: larger 4s infinite ease-in-out
+
+}
+
+@keyframes larger {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 .landing-button-container{
@@ -82,17 +101,29 @@
 }
 
 .black-feature-text{
-    color: rgb(4, 23, 37)
+    color: rgb(4, 23, 37);
+    position: relative
+
 }
 
+.black-feature-text:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:40%;
+    width: 20%;
+    height: 3px;
+    background-color: black;
+    border-radius: 20px;;
+}
 
 
 /* Feature Container */
 
 
 .feature-container{
-    margin-top: 0;
-    position: relative;
+
+    
 }
 
 .feature-bg-img{
@@ -103,8 +134,101 @@
 }
 
 
+/* Workflow Section */
+
+.workflow{
+    width: 100%;
+
+    position: relative;
+
+}
 
 
+
+.workflow-wrapper{
+   
+    width:93%;
+    height: auto;
+    margin: auto;
+    
+
+
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+ 
+}
+
+
+
+.workflow-img-container{
+   
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+}
+
+.workflow-card-wrapper{
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+ align-items: center;
+ gap: 10px;
+}
+
+
+
+
+.workflow-heading{
+    text-align: center;
+}
+
+
+
+
+.workflow-card{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: white;
+    width: 80%;
+    height: 120px;
+    object-fit: contain;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 0 10px #dfe2e4;
+    border-radius: 20px;
+}
+
+
+.card-heading{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.card-description{
+    font-size: 11px;
+    font-weight: light;
+    color: #36454F;
+    text-align: justify;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.card-text-container{
+    flex-direction: column;
+}
+
+.workflow-img{
+    width: 80%;
+}
 
 
 /* Media Queries */
@@ -124,16 +248,22 @@
        
     }
 
-    .landing-button-container{
-        
-    }
+  
 
     .landing-img{
         width: 300px;
     }
+
+    
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 756px){
+    .landing-container{
+        width: 100%;
+        height: 60vh;
+        position: relative;
+       
+    }
     .landing{
         display: grid;
         grid-template-columns: 100%;
@@ -166,4 +296,54 @@
     .landing-button-container{
         justify-content: center;
     }
+}
+
+
+@media screen and (max-width: 1030px) {
+    .workflow-wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+
+    .workflow-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workflow-img{
+        width: 60%;
+    }
+
+    .card-heading{
+        font-size: 13px;
+    }
+
+    .card-description{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:600px) {
+   
+    .workflow-wrapper{
+        width: 97%;
+    }
+   
+
+    .workflow-heading{
+        margin-bottom: 60px;
+    }
+    .workflow-card{
+      
+        width: 97%;
+    }
+}
+
+/* Form Styles */
+
+.form-btn-container{
+    text-align: center;
 }
