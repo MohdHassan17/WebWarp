@@ -38,8 +38,9 @@ function Form() {
     <section class="text-gray-600 body-font relative">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
-    <h1 class="mb-24 w-full text-center text-2xl font-extrabold dark:text-slate-50 sm:mx-auto sm:mb-20 sm:w-4/5 black-feature-text workflow-heading">
-          <span class="text-blue-800">Send</span> Us a Message        </h1>
+    <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+               Send Us <span class="text-indigo-600">a Message</span>
+            </h3>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Reach Out to Us! We Reply Swiftly to All Inquiries.</p>
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">

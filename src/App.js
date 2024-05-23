@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from './pages/Landing';
 import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer'
+import Card from './components/Card';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,7 +23,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/contact' element={<ContactUs/>} />
+        <Route path='/contact' element={<Card/>} />
       </Routes>
       
       </BrowserRouter>

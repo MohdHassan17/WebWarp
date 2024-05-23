@@ -7,6 +7,7 @@ import Warp from '../assets/images/Warp.png'
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Services', href: '', current: false },
+  { name: 'Features',  href:'' },
   { name: 'FAQs', href: '#', current: false },
   { name: 'Get A Quote', href: '/contact', current: true },
 ]
@@ -25,10 +26,10 @@ export default function Navbar() {
       </div>
       <span className='logo-banner-phone'><a href="mailto:webwarp@gmail.com">webwarp@gmail.com</a></span>
     </div>
-    <Disclosure as="nav" className="bg-blue-800 ">
+    <Disclosure as="nav" className="bg-blue-800 " style={{backgroundColor: "#0E1428"}}>
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8" style={{width:'90%'}}>
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -51,7 +52,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-full px-3 py-2 text-sm text-white font-medium text-[11px]'
                         )}
                         aria-current={item.current ? 'page' : undefined}
