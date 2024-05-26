@@ -87,11 +87,11 @@
     border-radius: 50px;
     transition: .4s ease-out;
     font-weight: bold;
-    border: 2px solid  rgb(4, 23, 37); 
+    border: 2px solid  #03254E 
 }
 
 .lighter-btn{
-    border: 2px solid #4169E1;
+    border: 2px solid #03254E;
 
 }
 

@@ -1,14 +1,16 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { redirect } from 'react-router-dom';
+import { Redirect, redirect } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
+import '../assets/css/Form.css'
+import BG from '../assets/images/sapiens.svg'
 
 function Form() {
 
 
 
     const form = useRef()
-    const notify = () => toast('Here is your toast.');
+    const notify = () => toast('Message Sent Successfully');
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -21,6 +23,7 @@ function Form() {
             
               console.log('SUCCESS!');
               notify()
+          
               
             },
             (error) => {
@@ -33,7 +36,8 @@ function Form() {
 
   return (
     <>
-
+  <div className='form-wrapper' id='contact'  data-aos="fade-zoom-in">
+    <img src={BG} alt="" className='form-bg'/>
     <form ref={form} onSubmit={sendEmail}>
     <section class="text-gray-600 body-font relative">
   <div class="container px-5 py-24 mx-auto">
@@ -64,7 +68,7 @@ function Form() {
           </div>
         </div>
         <div class="p-2 w-full form-btn-container">
-        <input type="submit" value="SEND MESSAGE" className="btn bg-blue-800 " style={{ color: "#fff" }}/>
+        <input type="submit" value="SEND MESSAGE" className="btn bg-blue-800 " style={{ color: "#fff", backgroundColor:'#03254E'}}/>
                 
                    </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
@@ -77,6 +81,9 @@ function Form() {
 </section>
     </form>
    
+   
+
+    </div>
     <Toaster/>
     </>
   )

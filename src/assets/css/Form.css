@@ -1,0 +1,28 @@
+.form-wrapper{
+    position: relative;
+
+}
+
+.form-bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transform: scaleY(1.2);
+    animation: form infinite 4s ease-in-out;
+}
+
+@keyframes form {
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1.05);
+    }
+
+  
+    100%{
+        transform: scaleY(1);
+    }
+}

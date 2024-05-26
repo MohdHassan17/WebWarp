@@ -1,14 +1,17 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
 body{
    
     font-family: 'Inter';
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 
 
-footer{
-    margin-top: 150px;
-}
 
 .footer-heading{
     color: whitesmoke;

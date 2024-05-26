@@ -1,11 +1,13 @@
 .logo-banner-wrapper{
     width: 100%;
     max-width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 20px
+    padding: 0 20px 0 20px;
+    background-color: #c62368;
+    color: white;
 }
 
 .logo-banner-phone{
@@ -14,6 +16,8 @@
 }
 
 .logo-img{
-    width: 60px;
+    width: 70px;
+    border-radius: 50%;
+
    
 }

@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from './pages/Landing';
-import ContactUs from './pages/ContactUs';
+
 import Footer from './components/Footer'
 import Card from './components/Card';
 import AOS from 'aos';
@@ -18,12 +18,11 @@ function App() {
 
   return (
     <div className="App">
-
-<Navbar/>
+      <Navbar/>
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/contact' element={<Card/>} />
+     
       </Routes>
       
       </BrowserRouter>
