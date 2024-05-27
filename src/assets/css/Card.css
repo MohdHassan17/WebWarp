@@ -44,19 +44,23 @@
 /* CardImage */
 
 
-.card-img-container{
+
+
+.card-img{
+    width: 100%;
+    height:100%;
+    margin: auto;
+    margin-top: 10px;
     object-fit: contain;
+}
+
+.card-img-container{
+    
     border-bottom: 5px solid #03254E;
     border-bottom-right-radius: 50px ;
     width: 100%;
   
 
-}
-
-.card-img{
-    width: 200px;
-    margin: auto;
-    margin-top: 10px;
 }
 
 

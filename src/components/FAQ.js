@@ -25,7 +25,7 @@ function FAQ() {
 
   return (
     <>
-    <div class="py-4 bg-white" data-aos="fade-zoom-in" id='faqs'>
+    <div class="py-4 bg-white" data-aos="fade-zoom-in" id='faq'>
     <div class="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
 
         <div class="text-center">

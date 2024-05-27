@@ -57,7 +57,7 @@ function Landing() {
               </p>
             </div>
             <div className="landing-button-container">
-              <a href="" className="btn btn-hover lighter-btn">
+              <a href="#faq" className="btn btn-hover lighter-btn">
                 LEARN MORE
               </a>
               <a href="#contact" className="btn  " style={{ color: "#fff", background:'#03254E' }}>
