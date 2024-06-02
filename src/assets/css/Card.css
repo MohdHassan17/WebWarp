@@ -1,93 +1,80 @@
-/* Card Container */
+.card{
+    width: 400px;
+    height: 500px;
+    background: hsla(291, 79%, 51%, 1);
+
+    background: linear-gradient(90deg, hsla(291, 79%, 51%, 1) 0%, hsla(240, 91%, 73%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(291, 79%, 51%, 1) 0%, hsla(240, 91%, 73%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(291, 79%, 51%, 1) 0%, hsla(240, 91%, 73%, 1) 100%);
+    padding: 3px;
+    border-radius: 20px;
+    color: white;
+
+    margin-top: 20px;
+}
 
 .card-wrapper{
-    margin-top: 15%;
-}
-.card-container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 97%;
-    margin: auto;
-    justify-content: space-around;
-    margin-top: 8% ;
-    
-    
-}
-
-
-/* Card Styles*/
-
-.card{
-    display: grid;
-    grid-template-rows: 45% 55%;
-    width: 300px;
-    height: 350px;
-   
-    font-family: 'Raleway';
-    border-radius: 50px;
-    box-shadow: 0 0 10px gray;
-    margin: 4%;
-
-
-    
-
-}
-
-
-@media screen and (max-width: 768px){
-    .card{
-        margin: 6%;
-    }
-}
-
-
-/* CardImage */
-
-
-
-
-.card-img{
     width: 100%;
     height:100%;
-    margin: auto;
-    margin-top: 10px;
-    object-fit: contain;
+
+border-radius: 20px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+background-color: rgba(0, 0, 0, 0.922);
+padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+ 
 }
+
 
 .card-img-container{
+    width:120px;
     
-    border-bottom: 5px solid #03254E;
-    border-bottom-right-radius: 50px ;
-    width: 100%;
-  
-
 }
 
-
-/* Card Text */
-
-.card-text-container{
-    padding: 15px;
+.card-img{
+    border-radius: 50%;
 }
 
 .card-heading{
-    text-transform:uppercase;
-    font-size: 18px;
+    font-size: 25px;
+  
+    font-weight: bold;
+    
 }
 
-.card-description{
-    margin-top: 15px;
-    list-style-type: none;
+.card-text-list{
+   list-style: none;
+   margin-top: 25px;
    
 }
-.card-description>li{
-    margin: 10px;
-    font-size: 11px;
+
+
+.card-list{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 14px;
     text-align: left;
+    margin: 5px;
+
 }
 
 
+.card:hover{
+    transform: scale(1.3);
+    background-color: red;
+}
 
-
-
-
+.card-btn-container{
+    position: fixed;
+    bottom: 50px;
+    left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

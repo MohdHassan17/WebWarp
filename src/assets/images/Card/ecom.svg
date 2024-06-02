@@ -1,0 +1,21 @@
+<svg width="641" height="641" viewBox="0 0 641 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="641" height="641" fill="url(#paint0_linear_4_102)"/>
+<rect x="72.5" y="164.5" width="497" height="308" stroke="black" stroke-width="7"/>
+<rect x="72.5" y="164.5" width="497" height="47" stroke="black" stroke-width="7"/>
+<path d="M536.721 174.818L542.994 185.523L549.266 174.818H553.903L545.448 187.909L553.903 201H549.266L542.994 190.841L536.721 201H532.085L540.403 187.909L532.085 174.818H536.721Z" fill="black"/>
+<circle cx="106" cy="189" r="10" fill="black"/>
+<circle cx="142" cy="189" r="10" fill="black"/>
+<path d="M229 321H418V389C418 416.614 395.614 439 368 439H279C251.386 439 229 416.614 229 389V321Z" fill="black"/>
+<circle cx="370" cy="353" r="10" fill="#F5F5F5"/>
+<circle cx="380" cy="439" r="10" fill="black"/>
+<circle cx="272" cy="439" r="10" fill="black"/>
+<line x1="202.74" y1="287.967" x2="257.74" y2="338.967" stroke="black" stroke-width="11"/>
+<path d="M206.167 283L184.561 307.766" stroke="black" stroke-width="11"/>
+<line x1="182.767" y1="301.993" x2="232.767" y2="348.993" stroke="black" stroke-width="11"/>
+<defs>
+<linearGradient id="paint0_linear_4_102" x1="4.13044e-08" y1="319.167" x2="641" y2="321.833" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7465D5"/>
+<stop offset="1" stop-color="#1C00C7"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,16 +1,17 @@
 import { React, useEffect } from "react";
 import Typewriter from "typewriter-effect";
-import LandingBG from "../assets/images/layered-waves-haikei (3).svg";
-import FeaturesBG from '../assets/images/second-section.svg'
-import DesignImage from '../assets/images/landing-bg.svg'
+import LandingBG from "../assets/images/BG.png";
+import CTABG from '../assets/images/cta-bg.svg'
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "../assets/css/Landing.css";
-import FAQ from "../components/FAQ";
+
 import Form from "../components/Form";
-import CardSection from "../components/CardSection";
+
 import Features from "../components/Features";
+import IntroVideo from "../components/IntroVideo";
 
 
 
@@ -20,68 +21,91 @@ function Landing() {
   }, [])
   return (
     <>
-      <section className="landing-container" data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0">
-        <img src={LandingBG} alt="" className="landing-bg-img" style={{ width: '100%' }} />
-        <div className="landing">
-          <div className="landing-text-container">
-            <div className="landing-text">
-              <h1 className="landing-heading">
-                <Typewriter
+
+<section class="custom-bg dark:bg-gray-900">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
+        <div class="mr-auto place-self-center lg:col-span-7 ">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-4xl text-white">
+
+            <Typewriter
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString("ELEVATE YOUR BRAND WITH STUNNING DESIGN!")
+                      .typeString("ELEVATE YOUR BRAND!")
                       .pauseFor(1000)
                       .deleteAll()
                       .typeString(
-                        "BRINGING YOUR VISIONS TO LIFE, PIXEL BY PIXEL"
+                        "MAXIMIZE YOUR REACH!"
                       )
                       .start();
                   }}
                   options={{
                     loop: false,
-                    cursor: "_",
+                    cursor: "|",
                     typeSpeed: 10, // Typing speed in milliseconds per character
-                    deleteSpeed: 5, // Deleting speed in milliseconds per character
+                    deleteSpeed: 10, // Deleting speed in milliseconds per character
                     delay: 75,
                   }}
                 />
-              </h1>
 
-              <p className="landing-description">
-                {" "}
-                Your go-to stop for top-notch web development and graphic
-                design!
-              </p>
-            </div>
-            <div className="landing-button-container">
-              <a href="#faq" className="btn btn-hover lighter-btn">
-                LEARN MORE
-              </a>
-              <a href="#contact" className="btn  " style={{ color: "#fff", background:'#03254E' }}>
-                CONTACT NOW
-              </a>
-            </div>
-          </div>
-          <div className="landing-img-container">
-            <img src={DesignImage} alt="" className="landing-img" />
-          </div>
+
+
+
+
+
+            </h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
+            <a href="/services" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 gradient-border-button">
+                  <p className="gradient-border-button-container">View Services
+</p>
+            </a>
+            <a href="/contact-us" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 gradient-bg-button">
+               Contact Us
+            </a> 
         </div>
-      </section>
+        <div class=" lg:mt-0 lg:col-span-5 lg:flex hidden md:justify-center">
+            <img src={LandingBG} alt="landing" style={{width:'300px'}}/>
+        </div>                
+    </div>
+</section>    
 
 
       {/* Product Card Section */}
-      <CardSection />
-
+      <IntroVideo/>
       {/* Features Section */}
       <Features />
 
 
 
+  <section className="cta-wrapper">
+    <img src={CTABG} alt="" className="cta-img" />   
+ 
+    <section className="cta-container ">
 
-      <FAQ />
+                <p className="cta-text">Delivering personalized digital services that resonate. Bringing your unique story to the forefront
+              </p>
+              <div className="cta-btn-container">
+              <a href="/about-us" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 gradient-border-button">
+                  <p className="gradient-border-button-container">About Us
+</p>
+            </a>
+            <a href="/services" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 gradient-border-button">
+                  <p className="gradient-border-button-container">View Services
+</p>
+            </a>
+            
+              </div>
+          
+    </section>
+
+  </section>
+
+
+
+
+
+
+
+    
       <Form />
 
 
